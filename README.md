@@ -1,7 +1,7 @@
-# Tauri + Vanilla
+## Tauri updater
 
-This template should help get you started developing with Tauri in vanilla HTML, CSS and Javascript.
+This project is for testing purposes of the [Tauri-update-server](). Releases include all the Tauri build types to test the update server.
 
-## Recommended IDE Setup
+### Contribute
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+PR any updates that are necessary.
