@@ -1,6 +1,8 @@
 name: 'build'
+
 on:
   workflow_dispatch:
+
 jobs:
   build:
     strategy:
@@ -23,7 +25,7 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 16
       - name: install Rust stable
         uses: dtolnay/rust-toolchain@stable
       - name: install dependencies (ubuntu only)
@@ -48,9 +50,8 @@ jobs:
           TAURI_PRIVATE_KEY: dW50cnVzdGVkIGNvbW1lbnQ6IHJzaWduIGVuY3J5cHRlZCBzZWNyZXQga2V5ClJXUlRZMEl5MnFWcExZa0FpajcxK2s4MDJHcHpIZ25rVEg1RXBnRDlTSm9sSmNEM3NoTUFBQkFBQUFBQUFBQUFBQUlBQUFBQVI3YVRHdmNnUHlJVGw0eFRockxLT3ZvalJvNmxYbm5aTkExNnd6OC9CRWdvaDFiR2xaVVhoekVld1M0TFpZY09Vc2E4b20wcDVnVEYyWHkwZzZtUzRrU1VRM0sxOGp6NXRNWFVBUmdRM01pbUViOGZNTHZHSEt5c2ZtcHJ2Rkoxb2t2bnp1NEtGR0U9Cg==
         with:
           args: ${{ matrix.settings.args }}
-          tagName: v__VERSION__ # the action automatically replaces \_\_VERSION\_\_ with the app version
-          releaseName: 'App v__VERSION__'
+          tagName: app-v__VERSION__ # the action automatically replaces \_\_VERSION\_\_ with the app version
+          releaseName: 'v__VERSION__'
           releaseBody: 'See the assets to download this version and install.'
           releaseDraft: true
           prerelease: true
-          includeDebug: true
