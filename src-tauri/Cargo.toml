@@ -1,8 +1,8 @@
 [package]
-name = "updater-test"
-version = "0.0.0"
-description = "A Tauri App"
-authors = ["you"]
+name = "updater"
+version = "0.1.0"
+description = "Test build for updater server tests."
+authors = ["wovnep"]
 license = ""
 repository = ""
 edition = "2021"

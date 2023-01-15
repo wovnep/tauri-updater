@@ -7,8 +7,8 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "updater-test",
-    "version": "0.0.0"
+    "productName": "updater",
+    "version": "0.1.0"
   },
   "tauri": {
     "allowlist": {
@@ -67,7 +67,7 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "updater-test",
+        "title": "updater",
         "width": 800
       }
     ]
