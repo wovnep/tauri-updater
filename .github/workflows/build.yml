@@ -44,13 +44,13 @@ jobs:
       - name: install app dependencies and build it
         run: yarn
       - name: build
-        uses: tauri-apps/tauri-action@v0
+        uses: tauri-apps/tauri-action@refactor
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAURI_PRIVATE_KEY: dW50cnVzdGVkIGNvbW1lbnQ6IHJzaWduIGVuY3J5cHRlZCBzZWNyZXQga2V5ClJXUlRZMEl5MnFWcExZa0FpajcxK2s4MDJHcHpIZ25rVEg1RXBnRDlTSm9sSmNEM3NoTUFBQkFBQUFBQUFBQUFBQUlBQUFBQVI3YVRHdmNnUHlJVGw0eFRockxLT3ZvalJvNmxYbm5aTkExNnd6OC9CRWdvaDFiR2xaVVhoekVld1M0TFpZY09Vc2E4b20wcDVnVEYyWHkwZzZtUzRrU1VRM0sxOGp6NXRNWFVBUmdRM01pbUViOGZNTHZHSEt5c2ZtcHJ2Rkoxb2t2bnp1NEtGR0U9Cg==
         with:
           args: ${{ matrix.settings.args }}
-          tagName: app-v__VERSION__ # the action automatically replaces \_\_VERSION\_\_ with the app version
+          tagName: v__VERSION__ # the action automatically replaces \_\_VERSION\_\_ with the app version
           releaseName: 'v__VERSION__'
           releaseBody: 'See the assets to download this version and install.'
           releaseDraft: true
