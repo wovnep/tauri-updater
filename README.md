@@ -1,6 +1,6 @@
 ## Tauri updater
 
-This project is for testing purposes of the [Tauri-update-server](). Releases include all the Tauri build types to test the update server.
+This project is for testing purposes of the [Tauri-update-server](https://github.com/wovnep/tauri-update-server). Releases include all the Tauri build types to test the update server.
 
 ### Contribute
 
